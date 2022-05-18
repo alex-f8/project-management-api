@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "7df51c64-0ee9-48fa-8ad0-df85cfa7f5c3",
+		"name": "project_management_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "projects/project-list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/projects/project-list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"projects",
+						"project-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "projects/get-prject/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/projects/get-project/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"projects",
+						"get-project",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "projects/add-workDays-forUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n  \"pid\":1,\r\n    \"uid\":1,\r\n    \"days\":\r\n        [ \"2022-07-02\",\"2022-04-23\"]\r\n        \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/projects/add-workDays-forUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"projects",
+						"add-workDays-forUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "projects/update-workDay-forUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"id\": 9,\r\n    \"day\": \"2022-05-10\"\r\n},\r\n{\r\n    \"id\": 10,\r\n    \"day\": \"2022-05-10\"\r\n}\r\n,\r\n{\r\n    \"id\": 6,\r\n    \"day\": \"2022-05-09\"\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/projects/update-workDay-forUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"projects",
+						"update-workDay-forUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "projects/delete-workDay-forUser/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/projects/delete-workDay-forUser/26",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"projects",
+						"delete-workDay-forUser",
+						"26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/projects/create-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"User1\",\r\n    \"surname\" : \"User1\",\r\n    \"password\": null,\r\n    \"role\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/projects/create-user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"projects",
+						"create-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users/get-user-info/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/get-user-info/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"get-user-info",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "projects/users-list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/projects/users-list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"projects",
+						"users-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "projects/deleteUserFromProject/2/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/projects/deleteUserFromProject/2/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"projects",
+						"deleteUserFromProject",
+						"2",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
