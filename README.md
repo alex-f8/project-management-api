@@ -31,4 +31,4 @@ Daily reports:
 - a list of employees who came to work on a specific selected day, where the date and time of the begin and end of work will be indicated
 
 
-**_Work in progress_**
+**_Work in progress ..._**
